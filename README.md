@@ -1,7 +1,8 @@
 There are 10 assignment of Middleware and Cors (basic to advanced level) 
 that will give a solid foundation about this very importand and crusial topic in express. 
 
-explanation
+explanation =>
+
 middleware is just like a function used for verify before go to the next function. 
 it takes three arguments which are 'req, res, next()' req is accept the request from 
 the body and res is used for giving the response back to the client and then if next 
