@@ -1,7 +1,7 @@
 // INTERMEDIATE LEVEL (Custom Middleware Logic)
 
-// 4. Create a middleware `checkToken`.
-//    If `req.headers.token === 'abc123'`, allow the user to access `/dashboard`. Else, respond with 403.
+// 4. Create a middleware 'checkToken'.
+// If req.headers.token === 'abc123', allow the user to access '/dashboard'. Else, respond with 403.
 
 // Middleware to check token
 
@@ -17,9 +17,9 @@ app.get('/dashboard', checkToken, (req, res) => {
   res.send("Welcome to Dashboard");
 });
 
-// 5. Make a route `/admin` that uses two middlewares:  
-//    - `isLoggedIn` (checks if user is logged in)  
-//    - `isAdmin` (checks if user is an admin)
+// 5. Make a route '/admin' that uses two middlewares:  
+//    - 'isLoggedIn' (checks if user is logged in)  
+//    - 'isAdmin' (checks if user is an admin)
 
 // isLoggedIn and isAdmin middlewares
 
@@ -38,7 +38,7 @@ app.get('/admin', isLoggedIn, isAdmin, (req, res) => {
 });
 
 
-// 6. Create a middleware that adds a timestamp to the `req` object and send it in the response.
+// 6. Create a middleware that adds a timestamp to the 'req' object and send it in the response.
 // Add timestamp
 
 app.use((req, res, next) => {
