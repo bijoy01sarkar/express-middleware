@@ -9,7 +9,7 @@ app.use(cors({
   origin: "http://localhost:3000"
 }));
 
-// 8. Allow CORS for two domains** only (`localhost:3000`, `myfrontend.com`) and only for `GET` and `POST` methods.
+// 8. Allow CORS for two domains only (`localhost:3000`, `myfrontend.com`) and only for `GET` and `POST` methods.
 // Allow CORS for two domains and specific methods
 
 app.use(cors({
@@ -24,7 +24,7 @@ app.use(cors({
   methods: ["GET", "POST"]
 }));
 
-// 9. Create an error-handling middleware** that logs the error to console and sends a nice error message to the client.
+// 9. Create an error-handling middleware that logs the error to console and sends a nice error message to the client.
 // Error-handling middleware
 
 app.use((err, req, res, next) => {
